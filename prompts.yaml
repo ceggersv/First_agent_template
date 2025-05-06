@@ -319,3 +319,4 @@
   "report": |-
     Here is the final answer from your managed agent '{{name}}':
     {{final_answer}}
+final_answer: "The final answer is:\n{answer}"
