@@ -50,9 +50,13 @@ custom_role_conversions=None,
 # Import tool from Hub
 image_generation_tool = load_tool("agents-course/text-to-image", trust_remote_code=True)
 
-with open("prompts.yaml", 'r') as stream:
-    prompt_templates = yaml.safe_load(stream)
-    
+# with open("prompts.yaml", 'r') as stream:
+#     prompt_templates = yaml.safe_load(stream)
+
+prompt_templates = {
+    'final_answer': "The final answer is:\n{answer}"
+}    
+
 agent = CodeAgent(
     model=model,
     tools=[final_answer], ## add your tools here (don't remove final answer)
