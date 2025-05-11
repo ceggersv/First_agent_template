@@ -5,13 +5,14 @@
         "final_answer"
     ],
     "model": {
-        "class": "HfApiModel",
+        "class": "LocalApiModel",
         "data": {
+            "api_url": "http://127.0.0.1:1234/v1/chat/completions",
             "max_tokens": 2096,
             "temperature": 0.5,
             "last_input_token_count": null,
             "last_output_token_count": null,
-            "model_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+            "model_id": "qwen2.5-7b-instruct",
             "custom_role_conversions": null
         }
     },

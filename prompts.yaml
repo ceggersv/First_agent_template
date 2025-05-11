@@ -319,3 +319,8 @@
   "report": |-
     Here is the final answer from your managed agent '{{name}}':
     {{final_answer}}
+"final_answer":
+  "pre_messages": |-
+    Please conclude the reasoning and provide the final answer.
+  "post_messages": |-
+    Here is the final answer:
